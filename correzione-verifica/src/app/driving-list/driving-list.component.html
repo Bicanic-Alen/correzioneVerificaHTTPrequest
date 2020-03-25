@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let mezzi of lista" >
+    <h4>Veicolo: </h4> {{mezzi.tipo}} | {{mezzi.tariffa}}
+   <button (click)="onClick(mezzi.tipo,mezzi.descrizione, mezzi.tariffa,mezzi.valutazionemedia,mezzi)"> noleggia </button>
+  </li>
+</ul>
+
+
+<app-rented [rent] = "lista2" ></app-rented>
