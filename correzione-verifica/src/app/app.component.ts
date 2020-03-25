@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 import { Driving } from './driving.model';
+import { Rent } from './rent.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,6 +12,7 @@ import { Driving } from './driving.model';
 export class AppComponent {
   title = 'selfdrivingthings';
 
+  rent_list : Rent[] = new Array<Rent>();
   drive : Driving;
   listVeicoli : Driving[];
   o : Observable<Driving[]>;
